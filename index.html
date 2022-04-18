@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Cotización de Seguros de Auto</h1>
+    <label>Datos Personales</label>
+    <form name="datos" action="datos_auto.html" method="get">
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <th>Nombre:</th>
+                <th>
+                    <input type="text" id="nombre" onkeyup="changeText()">
+                </th>
+            </tr>
+            <tr>
+                <th>Apellidos:</th>
+                <th>
+                    <input type="text" id="apellido" onkeyup="changeText()">
+                </th>
+            </tr>
+            <tr>
+                <th>Género:</th>
+                <th>
+                    <input type="radio" id="masculino" name="selec_genero" value="Masculino" onclick="changeText()">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="selec_genero" value="Femenino" onclick="changeText()">
+                    <label for="femenino">Femenino</label>
+                </th>
+            </tr>
+            <tr>
+                <th>Edad:</th>
+                <th>
+                    <input type="text">
+                </th>
+            </tr>
+            <tr>
+                <th>Estado:</th>
+                <th>
+                    <select name="estado" id="estado">
+                        <option value="no">Seleccione uno...</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="CDMX">Ciudad de México</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Estado de México">Estado de México</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="button" value="Limpiar">
+                </th>
+                <th>
+                    <input type="submit" value="Enviar">
+                </th>
+            </tr>
+        </table>
+    </form>  
+    <h2 id="gracias">Gracias por el interés en nuestros seguros</h2>
+    <script src="codigo.js" defer></script>
+</body>
+</html>
